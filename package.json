@@ -1,0 +1,19 @@
+{
+  "name": "medical-info-be",
+  "version": "1.0.0",
+  "description": "medical info app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "nodemon app.js"
+  },
+  "author": "Jean Pierre",
+  "license": "ISC",
+  "dependencies": {
+    "@nano-sql/core": "^2.3.7",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
