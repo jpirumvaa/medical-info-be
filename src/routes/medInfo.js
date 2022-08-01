@@ -7,14 +7,17 @@ const router = Router();
 
 router.get("/", checkAuth.verifyUser,
     permit(["admin", "patient", "pharmacist", "physician"]),
-    MedInfoController.findAll);
+    MedInfoController.findAll
+);
 router.get("/:id",
     checkAuth.verifyUser,
     permit(["admin", "patient", "pharmacist", "physician"]),
-    MedInfoController.findOne);
+    MedInfoController.findOne
+);
 router.post("/",
     checkAuth.verifyUser,
     permit(["admin"]),
-    MedInfoController.upload);
+    MedInfoController.upload
+);
 
 export default router;
